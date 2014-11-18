@@ -1,0 +1,54 @@
+﻿<toolkit:BasePage
+    x:Class="Com.IT.DiPaSport.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:cc="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:local="clr-namespace:Com.IT.DiPaSport.View"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True"
+    Background="White"
+    Loaded="PhoneApplicationPage_Loaded">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <Grid x:Name="ContentPanel" Grid.Row="0">
+            <!-- 5 pages content -->
+            <local:ContactViewUserControl/>
+            <!--
+            <local:HomeViewUserControl Visibility="Visible"/>
+            <local:SearchViewUserControl Name="MainSearchView" Width="Auto" Height="768" Visibility="Collapsed"/>
+            <local:AccountViewUserControl Name="MainAccountView" Width="Auto" Height="768" Visibility="Collapsed"/>
+            <local:CartViewUserControl Name="MainCartView" Width="Auto" Height="768" Visibility="Collapsed"/>
+            <local:ContactViewUserControl Name="MainContactView" Width="Auto" Height="768" Visibility="Collapsed"/>
+            -->
+            <!-- Child controls -->
+            <!--
+            <local:SearchByCategoryUserControl Name="MainSearchByCategory" Width="Auto" Height="768" Visibility="Collapsed"/>
+            -->
+        </Grid>
+
+        <!-- Bottom bar -->
+        <local:BottomBarUserControl x:Name="BottomBarMenu" Grid.Row="1"  />
+    </Grid>
+    <toolkit:WaitCursorService.WaitCursor>
+        <toolkit:WaitCursor 
+            x:Name="WaitIndicator"
+            Text="{Binding Path=AppResources.PleaseWait,
+            Source={StaticResource Lang}}"/>
+    </toolkit:WaitCursorService.WaitCursor>
+</toolkit:BasePage>

@@ -1,0 +1,66 @@
+﻿<baseview:BaseUserControl x:Class="Com.IT.DiPaSport.View.HomePage.ProductRequestViewUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:baseview="clr-namespace:Com.IT.DiPaSport.View.BasePage"
+    xmlns:local="clr-namespace:Com.IT.DiPaSport.View.Controls"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="1000" d:DesignWidth="480">
+    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneChromeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Title of home page -->
+        <Grid x:Name="TitlePanel" Style="{StaticResource AppTitle}" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Name="RequestBack" Grid.Column="0" Orientation="Horizontal" Tap="RequestBack_Tap">
+                <!--Image-->
+                <Image Width="Auto" Height="25" Grid.Column="0" Source="/Asserts/Images/back.png" Margin="5"/>
+                <TextBlock Text="BACK" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <!--Placeholder-->
+            <TextBlock Style="{StaticResource AppTitleContentCenter}" Grid.Column="1" Text="{Binding Path=Lang.HomeTitle, Source={StaticResource Lang}}"/>
+            <!--Logo-->
+            <Image Width="Auto" Height="Auto" Grid.Column="2" Source="/Asserts/Images/logo.png" Margin="5"/>
+        </Grid>
+
+        <Grid Name="ContentPanel" Grid.Row="1" Style="{StaticResource AppBackground}">
+            <ScrollViewer Height="Auto" HorizontalAlignment="Stretch">
+                <StackPanel Orientation="Vertical">
+                    <Image Name="ImageRequest" HorizontalAlignment="Center" Height="200" Margin="10"/>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RequestProductField1, Source={StaticResource Lang}}" Margin="5"/>
+                    <local:TextBoxEx Name="ProductRequest1" Margin="5"/>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RequestProductField2, Source={StaticResource Lang}}" Margin="5"/>
+                    <local:TextBoxEx Name="ProductRequest2" Margin="5"/>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RequestProductField3, Source={StaticResource Lang}}" Margin="5"/>
+                    <local:TextBoxEx Name="ProductRequest3" Margin="5"/>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RequestProductField4, Source={StaticResource Lang}}" Margin="5"/>
+                    <local:TextBoxEx Name="ProductRequest4" Margin="5"/>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RequestProductField5, Source={StaticResource Lang}}" TextWrapping="Wrap" Margin="5"/>
+                    <local:TextBoxEx Name="ProductRequest5" Margin="5"/>
+                    <StackPanel Name="UserInfo">
+                        <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RequestProductField6, Source={StaticResource Lang}}" Margin="5"/>
+                        <local:TextBoxEx Name="ProductRequest6" Margin="5"/>
+                        <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RequestProductField7, Source={StaticResource Lang}}" Margin="5"/>
+                        <local:TextBoxEx Name="ProductRequest7" Margin="5"/>
+                        <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RequestProductField8, Source={StaticResource Lang}}" Margin="5"/>
+                        <local:TextBoxEx Name="ProductRequest8" Margin="5"/>
+                    </StackPanel>
+                    <Button Name="SendProductRequestButton" Style="{StaticResource ButtonStyle}" Content="{Binding Path=Lang.RequestUpload, Source={StaticResource Lang}}" Click="SendProductRequestButton_Click"/>
+                    <TextBlock Height="70"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</baseview:BaseUserControl>

@@ -1,0 +1,83 @@
+﻿<UserControl x:Class="Com.IT.DiPaSport.View.BottomBarUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="65" d:DesignWidth="480">
+
+    <Border BorderThickness="1" BorderBrush="Gray">
+        <Grid x:Name="LayoutRoot" Background="White">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+        
+            <!-- Home -->
+            <Button x:Name="MenuHome" Style="{StaticResource ImageButtonMenuStyle}" Grid.Column="0" Tap="MenuHome_Tap" Tag="0">
+                <Button.Template>
+                    <ControlTemplate>
+                        <StackPanel Width="Auto" Height="{TemplateBinding Height}" Orientation="Vertical" Background="{TemplateBinding Background}">
+                            <Image Width="Auto" Height="40" Source="/Asserts/Images/home@2x.png" Margin="0 5 0 0"/>
+                            <TextBlock Style="{StaticResource MenuBottomLabelStyle}" Text="{Binding Path=Lang.MenuHome, Source={StaticResource Lang}}"/>
+                        </StackPanel>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <!-- Search -->
+            <Button x:Name="MenuSearch" Style="{StaticResource ImageButtonMenuStyle}" Grid.Column="1" Tap="MenuSearch_Tap" Tag="1">
+                <Button.Template>
+                    <ControlTemplate>
+                        <StackPanel Width="Auto" Height="{TemplateBinding Property=Height}" Orientation="Vertical"  Background="{TemplateBinding Background}">
+                            <Image Width="Auto" Height="40" Source="/Asserts/Images/search@2x.png" Margin="0 5 0 0"/>
+                            <TextBlock Style="{StaticResource MenuBottomLabelStyle}" Text="{Binding Path=Lang.MenuSearch, Source={StaticResource Lang}}"/>
+                        </StackPanel>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <!-- Account -->
+            <Button x:Name="MenuAccount" Style="{StaticResource ImageButtonMenuStyle}" Grid.Column="2" Tap="MenuAccount_Tap" Tag="2">
+                <Button.Template>
+                    <ControlTemplate>
+                        <StackPanel Width="Auto" Height="{TemplateBinding Property=Height}" Orientation="Vertical"  Background="{TemplateBinding Background}">
+                            <Image Width="Auto" Height="40" Source="/Asserts/Images/account@2x.png" Margin="0 5 0 0"/>
+                            <TextBlock Style="{StaticResource MenuBottomLabelStyle}" Text="{Binding Path=Lang.MenuAccount, Source={StaticResource Lang}}"/>
+                        </StackPanel>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <!-- Cart -->
+            <Button x:Name="MenuCart" Style="{StaticResource ImageButtonMenuStyle}" Grid.Column="3" Tap="MenuCart_Tap" Tag="3">
+                <Button.Template>
+                    <ControlTemplate>
+                        <StackPanel Width="Auto" Height="{TemplateBinding Property=Height}" Orientation="Vertical"  Background="{TemplateBinding Background}">
+                            <Image Width="Auto" Height="40" Source="/Asserts/Images/cart@2x.png" Margin="0 5 0 0"/>
+                            <TextBlock Style="{StaticResource MenuBottomLabelStyle}" Text="{Binding Path=Lang.MenuCart, Source={StaticResource Lang}}"/>
+                        </StackPanel>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <!-- Contact -->
+            <Button  x:Name="MenuContact" Style="{StaticResource ImageButtonMenuStyle}" Grid.Column="4" Tap="MenuContact_Tap" Tag="4">
+                <Button.Template>
+                    <ControlTemplate>
+                        <StackPanel Width="Auto" Height="{TemplateBinding Property=Height}" Orientation="Vertical"  Background="{TemplateBinding Background}">
+                            <Image Width="Auto" Height="40" Source="/Asserts/Images/contact@2x.png" Margin="0 5 0 0"/>
+                            <TextBlock Style="{StaticResource MenuBottomLabelStyle}" Text="{Binding Path=Lang.MenuContact, Source={StaticResource Lang}}"/>
+                        </StackPanel>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Grid>
+    </Border>
+</UserControl>

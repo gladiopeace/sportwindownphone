@@ -1,0 +1,117 @@
+﻿<baseview:BaseUserControl x:Class="Com.IT.DiPaSport.View.RegisterViewUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:local="clr-namespace:Com.IT.DiPaSport.View.Controls"
+    xmlns:baseview="clr-namespace:Com.IT.DiPaSport.View.BasePage"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="2500" d:DesignWidth="480">
+    
+    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneChromeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Title of home page -->
+        <Grid x:Name="TitlePanel" Style="{StaticResource AppTitle}" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Name="RegBack" Grid.Column="0" Orientation="Horizontal" Tap="RegBack_Tap">
+                <!--Image-->
+                <Image Width="Auto" Height="25" Grid.Column="0" Source="/Asserts/Images/back.png" Margin="5"/>
+                <TextBlock Text="BACK" Style="{StaticResource TextBlockStyle}" VerticalAlignment="Center"/>
+            </StackPanel>
+            <!--Title-->
+            <TextBlock Style="{StaticResource AppTitleContent}" Grid.Column="1" Text="{Binding Path=Lang.LoginTitle, Source={StaticResource Lang}}"/>
+        </Grid>
+        
+        <!-- Content -->
+        <Grid Grid.Row="1" Style="{StaticResource AppBackground}">
+            <ScrollViewer>
+                <StackPanel Orientation="Vertical">
+                    <!--HEADER-->
+                    <TextBlock Text="{Binding Path=Lang.RegisterCustomerInfo, Source={StaticResource Lang}}"
+                               FontWeight="Bold" FontSize="30" Style="{StaticResource TextBlockStyle}" HorizontalAlignment="Center"/>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RegisterTypeOfCompany, Source={StaticResource Lang}}" Margin="5 10 0 5"/>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Name="CustomerType" Text="Tap to select customer type" FontWeight="Bold" Margin="5 10 0 5" Tap="CustomerType_Tap" Tag="-1"/>
+                    <!--
+                    <toolkit:ListPicker Background="White" Foreground="Black">
+                        <toolkit:ListPickerItem Content="PRIVATE" Background="White" Foreground="Black" IsSelected="True" />
+                        <toolkit:ListPickerItem Content="GARAGE SHOP" Background="White" Foreground="Black"  />
+                        <toolkit:ListPickerItem Content="RETAILER" Background="White" Foreground="Black"  />
+                        <toolkit:ListPickerItem Content="WHOLESALER" Background="White" Foreground="Black"  />
+                        <toolkit:ListPickerItem Content="AGENT" Background="White" Foreground="Black"  />
+                        <toolkit:ListPickerItem Content="OFF S" Background="White" Foreground="Black"  />
+                    </toolkit:ListPicker>
+                    -->
+                    <!--First Name-->
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RegisterFirstName, Source={StaticResource Lang}}" Margin="5 10 0 5"/>
+                    <local:TextBoxEx Name="RegFirstName" Margin="5" Text="" />
+                    <!--Last Name-->
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RegisterLastName, Source={StaticResource Lang}}" Margin="5 10 0 5"/>
+                    <local:TextBoxEx Name="RegLastName" Margin="5" Text="" />
+                    <!--Company-->
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RegisterCompany, Source={StaticResource Lang}}" Margin="5 10 0 5"/>
+                    <local:TextBoxEx Name="RegCompany" Margin="5" Text="" />
+                    <!--VAT&TAX-->
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RegisterTaxVat, Source={StaticResource Lang}}" Margin="5 10 0 5"/>
+                    <local:TextBoxEx Name="RegTax" Margin="5" Text="" />
+                    <!--Address-->
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RegisterStreetAddress, Source={StaticResource Lang}}" Margin="5 10 0 5"/>
+                    <local:TextBoxEx Name="RegAddress" Margin="5" Text="" />
+                    <!--City-->
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RegisterCity, Source={StaticResource Lang}}" Margin="5 10 0 5"/>
+                    <local:TextBoxEx Name="RegCity" Margin="5" Text="" />
+                    <!--State-->
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RegisterStateProvince, Source={StaticResource Lang}}" Margin="5 10 0 5"/>
+                    <local:TextBoxEx Name="RegState" Margin="5" Text="" />
+                    <!--ZIP-->
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RegisterZipPostalCode, Source={StaticResource Lang}}" Margin="5 10 0 5"/>
+                    <local:TextBoxEx Name="RegZIP" Margin="5" Text="" />
+                    <!--Country-->
+                    <TextBlock  Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RegisterCountry, Source={StaticResource Lang}}" Margin="5 10 0 5"/>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Name="Country" Text="Tap to select one country" FontWeight="Bold" Margin="5 10 0 5" Tap="Country_Tap" Tag="-1"/>
+                    <!--Telephone-->
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RegisterTelephone, Source={StaticResource Lang}}" Margin="5 10 0 5"/>
+                    <local:TextBoxEx Name="RegTelephone" Margin="5" Text="" />
+                    <!--Fax-->
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RegisterFax, Source={StaticResource Lang}}" Margin="5 10 0 5"/>
+                    <local:TextBoxEx Name="RegFax" Margin="5" Text="" />
+                    <!--HEADER-->
+                    <TextBlock Text="{Binding Path=Lang.RegisterLoginInfo, Source={StaticResource Lang}}"
+                               FontWeight="Bold" FontSize="30" Style="{StaticResource TextBlockStyle}" HorizontalAlignment="Center"/>
+                    <!--Email-->
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RegisterEmail, Source={StaticResource Lang}}" Margin="5 10 0 5"/>
+                    <local:TextBoxEx Name="RegEmail" Margin="5" Text="" />
+                    <!--Password-->
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RegisterPasswordEmpty, Source={StaticResource Lang}}" Margin="5 10 0 5"/>
+                    <local:PasswordBoxEx Name="RegPass" Margin="5" Password="" />
+                    <!--Password confirm-->
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RegisterPasswordConfirm, Source={StaticResource Lang}}" Margin="5 10 0 5"/>
+                    <local:PasswordBoxEx Name="RegPassConfirm" Margin="5" Password="" />
+                    <!--Privacy-->
+                    <TextBlock Name="PrivacyLink" TextWrapping="Wrap" Foreground="Blue" Style="{StaticResource TextBlockStyle}" Text="{Binding Path=Lang.RegisterPrivacyLink, Source={StaticResource Lang}}" Margin="5 10 0 5" Tap="PrivacyLink_Tap" />
+                    <CheckBox Name="RegPrivacy" Background="Gainsboro" Foreground="Black" Content="{Binding Path=Lang.RegisterPrivacyOption, Source={StaticResource Lang}}" BorderBrush="Black" BorderThickness="2"/>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Name="RegCancel" Grid.Column="0" Content="{Binding Path=Lang.DialogCancel, Source={StaticResource Lang}}" Style="{StaticResource ButtonStyle}" Click="RegCancel_Click"/>
+                        <Button Name="RegOK" Grid.Column="1" Content="{Binding Path=Lang.DialogOK, Source={StaticResource Lang}}" Style="{StaticResource ButtonStyle}" Click="RegOK_Click"/>
+                    </Grid>
+                    <!--Placeholder-->
+                    <TextBlock Height="500"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</baseview:BaseUserControl>
