@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Com.IT.DiPaSport.View.SearchBoxUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="55" d:DesignWidth="480">
+    
+    <Grid x:Name="LayoutRoot" Style="{StaticResource AppBackground}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.ColumnSpan="2" Style="{StaticResource BorderStyle}"/>
+        <toolkit:PhoneTextBox Grid.Column="0"
+            Style="{StaticResource TextBoxStyle}"
+            Name="SearchKeyword"
+            InputScope="Text"
+            KeyDown="SearchKeyword_KeyDown"
+            PlaceholderText="{Binding Path=Lang.HomeSearchHint, Source={StaticResource Lang}}"/>
+        <Image Grid.Column="1" Width="Auto" Height="40" Source="/Asserts/Images/search@2x.png" Name="SearchAction" Tap="SearchAction_Tap"/>
+    </Grid>
+</UserControl>

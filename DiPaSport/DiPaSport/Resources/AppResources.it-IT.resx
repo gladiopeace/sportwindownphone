@@ -1,0 +1,654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddToCart" xml:space="preserve">
+    <value>AGGIUNGI AL CARRELLO</value>
+  </data>
+  <data name="AddToQuote" xml:space="preserve">
+    <value>RICHIESTA INFORMAZIONI</value>
+  </data>
+  <data name="AppName" xml:space="preserve">
+    <value>DiPaSport</value>
+  </data>
+  <data name="CartAddSuccess" xml:space="preserve">
+    <value>Prodotto inserito nel carrello con successo</value>
+  </data>
+  <data name="CartConfirmToPay" xml:space="preserve">
+    <value>Devi essere loggato per usare questa funzionalità</value>
+  </data>
+  <data name="CartCouponContent" xml:space="preserve">
+    <value>Inserisci il tuo codice coupon e clicca su conferma.</value>
+  </data>
+  <data name="CartCouponInvail" xml:space="preserve">
+    <value>Lo sconto non è valido</value>
+  </data>
+  <data name="CartCouponIsUsed" xml:space="preserve">
+    <value>Il buono sconto è già stato usato</value>
+  </data>
+  <data name="CartDiscount" xml:space="preserve">
+    <value>Se hai uno sconto clicca qui</value>
+  </data>
+  <data name="CartDiscountCodeEmpty" xml:space="preserve">
+    <value>Inserisci il tuo codice sconto</value>
+  </data>
+  <data name="CartDiscountConfirm" xml:space="preserve">
+    <value>Conferma</value>
+  </data>
+  <data name="CartDiscountExpired" xml:space="preserve">
+    <value>Coupon code is expired</value>
+  </data>
+  <data name="CartDiscountLabel" xml:space="preserve">
+    <value>Sconto</value>
+  </data>
+  <data name="CartEmpty" xml:space="preserve">
+    <value>Il tuo carrello è vuoto</value>
+  </data>
+  <data name="CartOrder" xml:space="preserve">
+    <value>Completa l\'ordine</value>
+  </data>
+  <data name="CartOrderCompleted" xml:space="preserve">
+    <value>L\'ordine è stato completato con successo.\nRiceverai un email con tutte le informazioni relative al tuo ordine.</value>
+  </data>
+  <data name="CartOrderConfirm" xml:space="preserve">
+    <value>Conferma Ordine</value>
+  </data>
+  <data name="CartOrderConfirmContent" xml:space="preserve">
+    <value>Il tuo ordine sarà inviato.\nIl totale da pagare è di</value>
+  </data>
+  <data name="CartOrderFail" xml:space="preserve">
+    <value>Order fail, please try again !</value>
+  </data>
+  <data name="CartOrderNumber" xml:space="preserve">
+    <value>Numero Ordine</value>
+  </data>
+  <data name="CartOrderOptionsAddAnother" xml:space="preserve">
+    <value>AGGIUNGI ALTRI PRODOTTI</value>
+  </data>
+  <data name="CartOrderOptionsComplete" xml:space="preserve">
+    <value>COMPLETA L\'ORDINE</value>
+  </data>
+  <data name="CartOrderSuccess" xml:space="preserve">
+    <value>Ordine inviato con successo</value>
+  </data>
+  <data name="CartProductExisting" xml:space="preserve">
+    <value>Questo prodotto è già presente nel carrello</value>
+  </data>
+  <data name="CartQuantity" xml:space="preserve">
+    <value>Quantità</value>
+  </data>
+  <data name="CartTax" xml:space="preserve">
+    <value>Iva</value>
+  </data>
+  <data name="CartTotalWithoutTax" xml:space="preserve">
+    <value>Totale imponibile</value>
+  </data>
+  <data name="CartTotalWithTax" xml:space="preserve">
+    <value>Totale Iva Inclusa</value>
+  </data>
+  <data name="CartYourCart" xml:space="preserve">
+    <value>Il tuo Carrello</value>
+  </data>
+  <data name="CMSPagePhone" xml:space="preserve">
+    <value>http://www.dipacommerce.com/appageiphone/?___store=en</value>
+  </data>
+  <data name="CMSPageTablet" xml:space="preserve">
+    <value>http://www.dipacommerce.com/apppage/?___store=en</value>
+  </data>
+  <data name="ConfirmExitApp" xml:space="preserve">
+    <value>Sei sicuro di voler chiudere l\'applicazione ?</value>
+  </data>
+  <data name="ConfirmRemoveCart" xml:space="preserve">
+    <value>Vuoi rimuore questo prodotto dal carrello ?</value>
+  </data>
+  <data name="ContactAddress1" xml:space="preserve">
+    <value>Via della Chiusa, 24</value>
+  </data>
+  <data name="ContactAddress2" xml:space="preserve">
+    <value>29010 Roveleto di Cadeo (PC) - Italy</value>
+  </data>
+  <data name="ContactCompany" xml:space="preserve">
+    <value>Di.Pa. Sport Srl</value>
+  </data>
+  <data name="ContactEmail" xml:space="preserve">
+    <value>Email: info@dipasport.com</value>
+  </data>
+  <data name="ContactMap" xml:space="preserve">
+    <value>Dove Siamo</value>
+  </data>
+  <data name="ContactSocial" xml:space="preserve">
+    <value>Social Network</value>
+  </data>
+  <data name="ContactTelephone" xml:space="preserve">
+    <value>Tel. +39.0523509862</value>
+  </data>
+  <data name="CustomerTypePrivate" xml:space="preserve">
+    <value>PRIVATO</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Eliminare</value>
+  </data>
+  <data name="DetailAlertLogin" xml:space="preserve">
+    <value>Loggati o Registrati per vedere i tuoi prezzi, ordinare o richiedere un preventivo</value>
+  </data>
+  <data name="DetailAvaiability" xml:space="preserve">
+    <value>DISPONIBILITÀ</value>
+  </data>
+  <data name="DetailCompetitivePrice" xml:space="preserve">
+    <value>Prezzi concorrenti:</value>
+  </data>
+  <data name="DetailCustomerBanned" xml:space="preserve">
+    <value>Sei bannato. Per riattivare il catalogo e poter acquistare ti chiediamo di contattarci in sede.</value>
+  </data>
+  <data name="DetailHintPhoto" xml:space="preserve">
+    <value>Clicca per vedere tutte le foto</value>
+  </data>
+  <data name="DetailPartCondition" xml:space="preserve">
+    <value>CONDIZIONE DEL PEZZO</value>
+  </data>
+  <data name="DetailPriceDistributor" xml:space="preserve">
+    <value>Prezzo Consigliato per il Grossista: &amp;#8364;</value>
+  </data>
+  <data name="DetailPriceGarageShop" xml:space="preserve">
+    <value>Prezzo Consigliato per l\'Officina: &amp;#8364;</value>
+  </data>
+  <data name="DetailPriceRetailer" xml:space="preserve">
+    <value>Prezzo Consigliato per il Ricambista: &amp;#8364;</value>
+  </data>
+  <data name="DetailPriceUnAvailable" xml:space="preserve">
+    <value>I prezzi saranno visibili entro 24/48 ore successive alla sua iscrizione</value>
+  </data>
+  <data name="DetailProductAvailable" xml:space="preserve">
+    <value>ABBIAMO DISPONIBILE IN PRONTA CONSEGNA IL RICAMBIO, SI PREGA DI RESTITUIRE LA CARCASSA ENTRO E NON OLTRE {0} GIORNI LAVORATIVI.</value>
+  </data>
+  <data name="DetailProductUnavailble" xml:space="preserve">
+    <value>RICAMBIO NON DISPONIBILE, DOBBIAMO RIPARARE IL VOSTRO, DURATA MEDIA DI {0} GIORNI, ESCLUSO IL TEMPO DI TRASPORTO.</value>
+  </data>
+  <data name="DetailPurchsePrice" xml:space="preserve">
+    <value>Prezzo di acquisto:</value>
+  </data>
+  <data name="DetailQuickOverView" xml:space="preserve">
+    <value>CARATTERISTICHE</value>
+  </data>
+  <data name="DetailSuiablerFor" xml:space="preserve">
+    <value>APPLICAZIONE</value>
+  </data>
+  <data name="DialogCancel" xml:space="preserve">
+    <value>Cancella</value>
+  </data>
+  <data name="DialogOK" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="Euro" xml:space="preserve">
+    <value>€</value>
+  </data>
+  <data name="HomeBarCode" xml:space="preserve">
+    <value>Ri-Ordina con codice QR</value>
+  </data>
+  <data name="HomeCallConfirm" xml:space="preserve">
+    <value>Vuoi chiamare il numero +390523509862 ?</value>
+  </data>
+  <data name="HomeCallUs" xml:space="preserve">
+    <value>CHIAMA</value>
+  </data>
+  <data name="HomeCategory" xml:space="preserve">
+    <value>Cerca per categoria</value>
+  </data>
+  <data name="HomeLastNews" xml:space="preserve">
+    <value>Ultime News:</value>
+  </data>
+  <data name="HomeSearchHint" xml:space="preserve">
+    <value>Cerca per codice OEM / Di.Pa.</value>
+  </data>
+  <data name="HomeTakePicture" xml:space="preserve">
+    <value>Scatta la foto del pezzo che stai cercando</value>
+  </data>
+  <data name="HomeTitle" xml:space="preserve">
+    <value>www.dipasport.com</value>
+  </data>
+  <data name="LoadMore" xml:space="preserve">
+    <value>Carica altri risultati</value>
+  </data>
+  <data name="LoginButton" xml:space="preserve">
+    <value>Accedi</value>
+  </data>
+  <data name="LoginFail" xml:space="preserve">
+    <value>Cannot login</value>
+  </data>
+  <data name="Logining" xml:space="preserve">
+    <value>Accesso...</value>
+  </data>
+  <data name="LoginLostPassword" xml:space="preserve">
+    <value>Hai dimenticato la password?</value>
+  </data>
+  <data name="LoginNameEmpty" xml:space="preserve">
+    <value>Inserisci la tua user name</value>
+  </data>
+  <data name="LoginPasswordEmpty" xml:space="preserve">
+    <value>Inserisci la tua password</value>
+  </data>
+  <data name="LoginPasswordHint" xml:space="preserve">
+    <value>password</value>
+  </data>
+  <data name="LoginRegisterButton" xml:space="preserve">
+    <value>Crea account</value>
+  </data>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>Login Di.Pa. Sport</value>
+  </data>
+  <data name="LoginUsernameHint" xml:space="preserve">
+    <value>username</value>
+  </data>
+  <data name="LogoutConfirm" xml:space="preserve">
+    <value>Sei sicuro che vuoi uscire ?</value>
+  </data>
+  <data name="LogoutConfirmTitle" xml:space="preserve">
+    <value>Esci</value>
+  </data>
+  <data name="LostPasswordEmailEmpty" xml:space="preserve">
+    <value>Inserisci la tua email</value>
+  </data>
+  <data name="MenuAccount" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="MenuCart" xml:space="preserve">
+    <value>Carrello</value>
+  </data>
+  <data name="MenuContact" xml:space="preserve">
+    <value>Contatti</value>
+  </data>
+  <data name="MenuHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="MenuSearch" xml:space="preserve">
+    <value>Cerca</value>
+  </data>
+  <data name="NoNetwork" xml:space="preserve">
+    <value>Attenzione, nessuna connessione internet.</value>
+  </data>
+  <data name="OpenDetails" xml:space="preserve">
+    <value>APRI SCHEDA</value>
+  </data>
+  <data name="PhoneNumberContact" xml:space="preserve">
+    <value>+390523509862</value>
+  </data>
+  <data name="PleaseWait" xml:space="preserve">
+    <value>Elaborazione...</value>
+  </data>
+  <data name="ProductCode" xml:space="preserve">
+    <value>Codice:</value>
+  </data>
+  <data name="ProductCodeOEM" xml:space="preserve">
+    <value>Codice OEM:</value>
+  </data>
+  <data name="ProductPricePrefix" xml:space="preserve">
+    <value>IL TUO PREZZO:</value>
+  </data>
+  <data name="ProductPriceSuffix" xml:space="preserve">
+    <value>per 1 pezzo</value>
+  </data>
+  <data name="RegisterByClient" xml:space="preserve">
+    <value>WindowPhone APP</value>
+  </data>
+  <data name="RegisterCustomerInfo" xml:space="preserve">
+    <value>Informazione Clienti</value>
+  </data>
+  <data name="RegisterLoginInfo" xml:space="preserve">
+    <value>Informazioni di accesso</value>
+  </data>
+  <data name="RegisterTypeOfCompany" xml:space="preserve">
+    <value>Tipo di Azienda*</value>
+  </data>
+  <data name="RequestEmailSubject" xml:space="preserve">
+    <value>Richiesta prodotto da App</value>
+  </data>
+  <data name="RequestInputRequire" xml:space="preserve">
+    <value>Per favore compila tutti i campi richiesti</value>
+  </data>
+  <data name="RequestProductField1" xml:space="preserve">
+    <value>Indica che ricambio cercavi*</value>
+  </data>
+  <data name="RequestProductField2" xml:space="preserve">
+    <value>Indicare marca, modello e anno del veicolo*</value>
+  </data>
+  <data name="RequestProductField3" xml:space="preserve">
+    <value>Indicare la marca e codice del ricambio</value>
+  </data>
+  <data name="RequestProductField4" xml:space="preserve">
+    <value>Indicare il difetto del veicolo su strada</value>
+  </data>
+  <data name="RequestProductField5" xml:space="preserve">
+    <value>Inserisci il difetto in diagnosi con codice e descrione del difetto</value>
+  </data>
+  <data name="RequestProductField6" xml:space="preserve">
+    <value>Nome &amp;amp; Cognome*</value>
+  </data>
+  <data name="RequestProductField7" xml:space="preserve">
+    <value>Email*</value>
+  </data>
+  <data name="RequestProductField8" xml:space="preserve">
+    <value>Telefono*</value>
+  </data>
+  <data name="RequestSentMailSuccess" xml:space="preserve">
+    <value>La richiesta è stata inviata con successo a</value>
+  </data>
+  <data name="RequestUpload" xml:space="preserve">
+    <value>Invia</value>
+  </data>
+  <data name="SearchBy" xml:space="preserve">
+    <value>Select the search method</value>
+  </data>
+  <data name="SearchKeywordEmpty" xml:space="preserve">
+    <value>Inserisci i codici che vuoi cercare</value>
+  </data>
+  <data name="SearchResultsLabel" xml:space="preserve">
+    <value>Risultati di ricerca:</value>
+  </data>
+  <data name="SearchNotFound" xml:space="preserve">
+    <value>Nessun risultato</value>
+  </data>
+  <data name="SelectLanguage" xml:space="preserve">
+    <value>Scegli la lingua</value>
+  </data>
+  <data name="ServerNotResponse" xml:space="preserve">
+    <value>Connessione al server impossibile</value>
+  </data>
+  <data name="StatusLoading" xml:space="preserve">
+    <value>Caricamento...</value>
+  </data>
+  <data name="StatusSearching" xml:space="preserve">
+    <value>Sto cercando...</value>
+  </data>
+  <data name="TakePictureOptionsA" xml:space="preserve">
+    <value>Aggiungi un’altra foto</value>
+  </data>
+  <data name="TakePictureOptionsB" xml:space="preserve">
+    <value>Invia richiesta</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Benvenuto</value>
+  </data>
+  <data name="CustomerTypeAgent" xml:space="preserve">
+    <value>AGENTE</value>
+  </data>
+  <data name="CustomerTypeGarageShop" xml:space="preserve">
+    <value>OFFICINA</value>
+  </data>
+  <data name="CustomerTypeOFFS" xml:space="preserve">
+    <value>OFF S</value>
+  </data>
+  <data name="CustomerTypeRetailer" xml:space="preserve">
+    <value>RICAMBISTA</value>
+  </data>
+  <data name="CustomerTypeWholeSaler" xml:space="preserve">
+    <value>GROSSISTA</value>
+  </data>
+  <data name="LostPasswordContent" xml:space="preserve">
+    <value>Inserisci la tua email per resettare la password</value>
+  </data>
+  <data name="LostPasswordMsg" xml:space="preserve">
+    <value>Abbiamo inviato un link per resettare la tua password alla tua email</value>
+  </data>
+  <data name="LostPasswordMsgFail" xml:space="preserve">
+    <value>Error during reset your password</value>
+  </data>
+  <data name="LostPasswordTitle" xml:space="preserve">
+    <value>Password dimenticata</value>
+  </data>
+  <data name="RegisterCity" xml:space="preserve">
+    <value>Comune*</value>
+  </data>
+  <data name="RegisterCompany" xml:space="preserve">
+    <value>Ragione Sociale / Inserire il Nome se privato*</value>
+  </data>
+  <data name="RegisterCountry" xml:space="preserve">
+    <value>Nazione*</value>
+  </data>
+  <data name="RegisterEmail" xml:space="preserve">
+    <value>Email*</value>
+  </data>
+  <data name="RegisterEmailHint" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="RegisterFail" xml:space="preserve">
+    <value>Errore durante la registrazione</value>
+  </data>
+  <data name="RegisterFax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="RegisterFirstName" xml:space="preserve">
+    <value>Nome*</value>
+  </data>
+  <data name="RegisterHeader" xml:space="preserve">
+    <value>Informazioni registrazione</value>
+  </data>
+  <data name="RegisterLastName" xml:space="preserve">
+    <value>Cognome*</value>
+  </data>
+  <data name="RegisterNewletters" xml:space="preserve">
+    <value>Iscriviti alla nostra newsletter</value>
+  </data>
+  <data name="RegisterPasswordConfirm" xml:space="preserve">
+    <value>Conferma password*</value>
+  </data>
+  <data name="RegisterPasswordEmpty" xml:space="preserve">
+    <value>Inserisci la tua password*</value>
+  </data>
+  <data name="RegisterPasswordHint" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="RegisterPasswordMinLength" xml:space="preserve">
+    <value>La password deve essere almeno di 6 caratteri e senza spazi.</value>
+  </data>
+  <data name="RegisterPasswordNotMatch" xml:space="preserve">
+    <value>Assicurati che le password corrispondano</value>
+  </data>
+  <data name="RegisterPrivacyLabel" xml:space="preserve">
+    <value>Regole Privacy *</value>
+  </data>
+  <data name="RegisterPrivacyLink" xml:space="preserve">
+    <value>Informativa ai sensi del D.Lgs. 196/03 sulla tutela dei dati personali (clicca per leggere)</value>
+  </data>
+  <data name="RegisterPrivacyOption" xml:space="preserve">
+    <value>Accetto</value>
+  </data>
+  <data name="RegisterPrivacyUrl" xml:space="preserve">
+    <value>http://www.dipacommerce.com/privacy</value>
+  </data>
+  <data name="RegisterStateProvince" xml:space="preserve">
+    <value>Provincia</value>
+  </data>
+  <data name="RegisterStreetAddress" xml:space="preserve">
+    <value>Via e numero*</value>
+  </data>
+  <data name="RegisterTaxVat" xml:space="preserve">
+    <value>Partita iva o Codice Fiscale*</value>
+  </data>
+  <data name="RegisterTelephone" xml:space="preserve">
+    <value>Telefono*</value>
+  </data>
+  <data name="RegisterZipPostalCode" xml:space="preserve">
+    <value>CAP*</value>
+  </data>
+  <data name="SearchContactDetail" xml:space="preserve">
+    <value>DATI CONTATTO</value>
+  </data>
+  <data name="SearchRequesetFaultCodeDescription" xml:space="preserve">
+    <value>Inserisci il difetto in diagnosi con codice e descrizione del difetto (esempio: "P-1000 sonda lambda bancata 1")</value>
+  </data>
+  <data name="SearchRequestAddInfo" xml:space="preserve">
+    <value>Eventuali comunicazioni</value>
+  </data>
+  <data name="SearchRequestBrandOfPart" xml:space="preserve">
+    <value>Indicare la marca del ricambio*</value>
+  </data>
+  <data name="SearchRequestCompany" xml:space="preserve">
+    <value>Czienda*</value>
+  </data>
+  <data name="SearchRequestFaultOfVehicle" xml:space="preserve">
+    <value>Inserisci il difetto del veicolo su strada*</value>
+  </data>
+  <data name="SearchRequestInfo" xml:space="preserve">
+    <value>RICHIESTA INFORMAZIONI</value>
+  </data>
+  <data name="SearchRequestModelOfVehicle" xml:space="preserve">
+    <value>Indicare il modello*</value>
+  </data>
+  <data name="SearchRequestMsg" xml:space="preserve">
+    <value>Grazie per aver inviato la tua richiesta.\nUn nostro incaricato vi risponderà nel minor tempo possibile.\nIl team Di.Pa. Sport</value>
+  </data>
+  <data name="SearchRequestMsgNotFound" xml:space="preserve">
+    <value>La tua ricerca non ha prodotto risultati.\nCompila la scheda qui sotto e verrai contattato al più presto dal nostro staff.</value>
+  </data>
+  <data name="SearchRequestPart" xml:space="preserve">
+    <value>Indicare la marca del ricambio*</value>
+  </data>
+  <data name="SearchRequestPartNumber" xml:space="preserve">
+    <value>Indicare il/i codici che trovi nel ricambio*</value>
+  </data>
+  <data name="SearchRequestTypeOfVehicle" xml:space="preserve">
+    <value>Indicare il veicolo*</value>
+  </data>
+  <data name="SearchRequestUploadPictures" xml:space="preserve">
+    <value>Inserisci la foto del ricambio se ne hai una</value>
+  </data>
+  <data name="LanguageMsgIT" xml:space="preserve">
+    <value>Devi disinstallare e reinstallare l'applicazione per cambiare la lingua</value>
+  </data>
+  <data name="LanguageMsgUK" xml:space="preserve">
+    <value>You be must re-install the application to change language</value>
+  </data>
+  <data name="LanguageSelectIT" xml:space="preserve">
+    <value>Scegli la lingua</value>
+  </data>
+  <data name="LanguageSelectUK" xml:space="preserve">
+    <value>Select default language</value>
+  </data>
+  <data name="LoginSuccess" xml:space="preserve">
+    <value>Loggato</value>
+  </data>
+  <data name="DetailCompatibility" xml:space="preserve">
+    <value>COMPATIBILITÀ</value>
+  </data>
+  <data name="DetailRefsCode" xml:space="preserve">
+    <value>Codici Riferimento NASCOSTI DIPA</value>
+  </data>
+  <data name="DetailSpecialPrice" xml:space="preserve">
+    <value>ribassato &amp;#8364;</value>
+  </data>
+</root>
